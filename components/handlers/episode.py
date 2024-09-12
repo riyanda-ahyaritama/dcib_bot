@@ -98,7 +98,7 @@ async def eps(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 		buttons = []
 	keyboard.append([InlineKeyboardButton(
 		"🔍 Full Information",
-		url=urljoin(WIKI_URL, title.replace(" ", "_"))
+		url=urljoin(WIKI_URL, r.url)
 	)])
 
 	reply_to_message_id: Optional[int] = None
